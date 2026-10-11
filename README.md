@@ -8,21 +8,20 @@ This repository contains the Verilog implementation and behavioral verification 
 
 ## 🛠 Features
 
-- \*\*Address Decoding:\*\* 74LS138 decoder logic dividing the 20-bit address bus into ROM (`FxxxxH`), RAM (`0xxxxH`), and Accelerator (`2xxxxH`) regions.
+- **Address Decoding:** 74LS138 decoder logic dividing the 20-bit address bus into ROM (`FxxxxH`), RAM (`0xxxxH`), and Accelerator (`2xxxxH`) regions.
 
-- \*\*Bank Organization:\*\* Even and Odd memory banks handling 16-bit aligned word access via `BHE#` and `A0`.
+- **Bank Organization:** Even and Odd memory banks handling 16-bit aligned word access via `BHE#` and `A0`.
 
-- \*\*MMIO Accelerator:\*\* Dedicated registers for operands (`A`, `B`), control, and output with level-sensitive interrupt (`INTR`) generation upon computation completion.
+- **MMIO Accelerator:** Dedicated registers for operands (`A`, `B`), control, and output with level-sensitive interrupt (`INTR`) generation upon computation completion.
 
-- \*\*Bus Contention Management:\*\* Tri-state (`ZZZZ`) CPU data bus arbitration resolving read/write race conditions and hold-time constraints.
+- **Bus Contention Management:** Tri-state (`ZZZZ`) CPU data bus arbitration resolving read/write race conditions and hold-time constraints.
 
 
 
 ## 📐 Architecture
 
-!\[RTL Schematic](docs/schematic.png)
 ![RTL Schematic](docs/schematic.png)
-[RTL Schematic](docs/schematic.png)
+
 
 
 ## ⏱ Simulation \& Verification
@@ -37,5 +36,5 @@ Verified using Vivado Simulator (XSim).
 
 
 
-!\[Waveform](docs/simulation\_wave.png)
+![Waveform](docs/simulation\_wave.png)
 
