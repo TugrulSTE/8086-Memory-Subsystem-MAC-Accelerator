@@ -21,7 +21,8 @@ This repository contains the Verilog implementation and behavioral verification 
 ## 📐 Architecture
 
 !\[RTL Schematic](docs/schematic.png)
-
+![RTL Schematic](docs/schematic.png)
+[RTL Schematic](docs/schematic.png)
 
 
 ## ⏱ Simulation \& Verification
